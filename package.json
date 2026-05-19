@@ -1,9 +1,9 @@
 {
-  "name": "paste-type",
-  "displayName": "Paste Type",
-  "description": "Type clipboard contents into the active editor on paste.",
+  "name": "vscode-paste-type",
+  "displayName": "VSCode Paste Type",
+  "description": "Show code being typed out from your clip board. Great for videos and demos.",
   "version": "0.0.1",
-  "publisher": "eddie",
+  "publisher": "eddiejaoude",
   "engines": {
     "vscode": "^1.90.0"
   },

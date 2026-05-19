@@ -1,6 +1,6 @@
 # Paste Type
 
-A VS Code extension that types clipboard text into the editor when you paste.
+A VSCode extension that types clipboard text into the editor when you paste.
 
 ## What it does
 
@@ -11,11 +11,13 @@ A VS Code extension that types clipboard text into the editor when you paste.
 - Adds a status bar toggle so you can quickly turn Paste Type on/off and see current state
 - Adds a status bar speed menu so you can quickly switch typing pace from slow to fast
 
+[Demo animated gif of VSCode exxtension Paste Out](./assets/vscode-type-out.gif)
+
 ## Configuration
 
 - `paste-type.enabled`: Enables/disables Paste Type.
   - Default: `true`
-  - When disabled, `Ctrl+V` / `Cmd+V` uses VS Code's default paste behavior.
+  - When disabled, `Ctrl+V` / `Cmd+V` uses VSCode's default paste behavior.
 - `paste-type.typingDelayMs`: Delay (in milliseconds) between each typed character.
   - Default: `40`
   - Increase this if you want visible typing animation.
@@ -49,12 +51,12 @@ A VS Code extension that types clipboard text into the editor when you paste.
    ```bash
    npm run compile
    ```
-3. Press `F5` in VS Code to launch an Extension Development Host.
+3. Press `F5` in VSCode to launch an Extension Development Host.
 4. Copy code and paste in an editor to see it typed out.
 
-## Install in VS Code
+## Install in VSCode
 
-1. Install the VS Code extension packager:
+1. Install the VSCode extension packager:
    ```bash
    npm install -g @vscode/vsce
    ```
@@ -70,15 +72,15 @@ A VS Code extension that types clipboard text into the editor when you paste.
   ```bash
   code --install-extension paste-type-0.0.1.vsix
   ```
-- VS Code UI:
+- VSCode UI:
   1. Open Extensions view.
   2. Click the `...` menu.
   3. Select `Install from VSIX...`.
   4. Choose the generated `.vsix` file.
 
-4. Reload VS Code when prompted.
+4. Reload VSCode when prompted.
 
-## Publish to VS Code Marketplace (App Store)
+## Publish to VSCode Marketplace (App Store)
 
 1. Prepare extension metadata in `package.json`:
 
@@ -122,4 +124,4 @@ vsce publish minor
 vsce publish major
 ```
 
-After publish, your extension should appear on the VS Code Marketplace within a few minutes.
+After publish, your extension should appear on the VSCode Marketplace within a few minutes.
