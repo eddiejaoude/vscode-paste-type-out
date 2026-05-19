@@ -1,0 +1,61 @@
+{
+  "name": "paste-type",
+  "displayName": "Paste Type",
+  "description": "Type clipboard contents into the active editor on paste.",
+  "version": "0.0.1",
+  "publisher": "eddie",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "paste-type.typePasteFromClipboard",
+        "title": "Paste Type: Type Clipboard Contents"
+      },
+      {
+        "command": "paste-type.toggleEnabled",
+        "title": "Paste Type: Toggle Enabled"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "paste-type.typePasteFromClipboard",
+        "key": "ctrl+v",
+        "mac": "cmd+v",
+        "when": "editorTextFocus && !editorReadonly"
+      }
+    ],
+    "configuration": {
+      "title": "Paste Type",
+      "properties": {
+        "paste-type.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Paste Type. When disabled, paste uses VS Code's default behavior."
+        },
+        "paste-type.typingDelayMs": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1000,
+          "description": "Delay in milliseconds between typed characters. Set to 0 for fastest typing."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.4"
+  }
+}
