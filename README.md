@@ -9,6 +9,7 @@ A VS Code extension that types clipboard text into the editor when you paste.
 - Types it character-by-character
 - Preserves exact formatting, including spaces, tabs, and indentation
 - Adds a status bar toggle so you can quickly turn Paste Type on/off and see current state
+- Adds a status bar speed menu so you can quickly switch typing pace from slow to fast
 
 ## Configuration
 
@@ -16,7 +17,7 @@ A VS Code extension that types clipboard text into the editor when you paste.
   - Default: `true`
   - When disabled, `Ctrl+V` / `Cmd+V` uses VS Code's default paste behavior.
 - `paste-type.typingDelayMs`: Delay (in milliseconds) between each typed character.
-  - Default: `0`
+  - Default: `40`
   - Increase this if you want visible typing animation.
 
 ## Toggle on/off quickly
@@ -26,6 +27,17 @@ A VS Code extension that types clipboard text into the editor when you paste.
   - `Paste Type: Off`
 - Click the button to toggle state.
 - You can also run the command: `Paste Type: Toggle Enabled`.
+
+## Speed menu
+
+- Use the `Paste Speed` status bar item next to the toggle.
+- Click it to choose one of the built-in presets:
+  - Slow
+  - Comfortable
+  - Balanced
+  - Fast
+  - Instant
+- You can also run the command: `Paste Type: Select Speed`.
 
 ## Run locally
 

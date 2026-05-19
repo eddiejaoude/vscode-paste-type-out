@@ -20,6 +20,10 @@
       {
         "command": "paste-type.toggleEnabled",
         "title": "Paste Type: Toggle Enabled"
+      },
+      {
+        "command": "paste-type.selectSpeed",
+        "title": "Paste Type: Select Speed"
       }
     ],
     "keybindings": [
@@ -40,7 +44,7 @@
         },
         "paste-type.typingDelayMs": {
           "type": "number",
-          "default": 0,
+          "default": 40,
           "minimum": 0,
           "maximum": 1000,
           "description": "Delay in milliseconds between typed characters. Set to 0 for fastest typing."
