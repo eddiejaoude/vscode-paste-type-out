@@ -11,7 +11,7 @@ A VSCode extension that types clipboard text into the editor when you paste.
 - Adds a status bar toggle so you can quickly turn Paste Type on/off and see current state
 - Adds a status bar speed menu so you can quickly switch typing pace from slow to fast
 
-[Demo animated gif of VSCode exxtension Paste Out](./assets/vscode-type-out.gif)
+![Demo animated gif of VSCode exxtension Paste Out](./assets/vscode-type-out.gif)
 
 ## Configuration
 
